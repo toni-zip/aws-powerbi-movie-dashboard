@@ -8,6 +8,81 @@ O objetivo foi simular um ambiente de Business Intelligence (BI), desde a modela
 
 ---
 
+# 📈 Dashboards
+
+O projeto conta com dois dashboards desenvolvidos no Microsoft Power BI, ambos conectados diretamente ao banco de dados PostgreSQL hospedado no Amazon Aurora.
+
+---
+
+## Dashboard 1 — Visão Geral dos Filmes
+
+Este dashboard apresenta uma visão consolidada do catálogo de filmes armazenado no banco de dados.
+
+<img width="900" height="508" alt="Screenshot 2026-07-22 184652" src="https://github.com/user-attachments/assets/ce575c52-6098-4f96-b1dc-67cf37ae7e38" />
+
+
+### Indicadores (KPIs)
+
+- Quantidade total de filmes
+- Média da duração dos filmes
+- Média das notas IMDb
+- Maior nota IMDb
+
+### Recursos
+
+- Filtro interativo por título
+- Gráfico comparativo das notas IMDb por filme
+- Gráfico comparativo da duração dos filmes
+- Atualização dinâmica dos indicadores conforme o filtro selecionado
+
+### Objetivo
+
+Permitir uma análise rápida da qualidade e das características gerais do catálogo de filmes.
+
+---
+
+## Dashboard 2 — Streaming e Custos
+
+Este dashboard concentra informações sobre as plataformas de streaming presentes no banco de dados e os filmes disponíveis em cada uma delas.
+
+<img width="909" height="510" alt="Screenshot 2026-07-22 184741" src="https://github.com/user-attachments/assets/5a6a1e0f-af5d-4a21-bf1b-90c768cd593a" />
+
+
+### Indicadores (KPIs)
+
+- Quantidade de plataformas cadastradas
+- Média dos preços das assinaturas
+- Maior preço mensal
+- Menor preço mensal
+
+### Visualizações
+
+- Gráfico de barras com o valor mensal de cada plataforma
+- Gráfico de rosca mostrando a distribuição dos filmes por streaming
+- Tabela detalhada contendo:
+  - Filme
+  - Ano de lançamento
+  - Diretor
+  - Ator principal
+  - Plataforma de streaming
+  - Valor mensal da assinatura
+
+### Objetivo
+
+Facilitar a análise comparativa entre plataformas de streaming, seus custos e os títulos disponíveis.
+
+---
+
+## Funcionalidades
+
+- Conexão em tempo real com PostgreSQL (Amazon Aurora)
+- Filtros interativos
+- Indicadores (KPIs)
+- Gráficos comparativos
+- Tabelas dinâmicas
+- Integração entre múltiplas tabelas utilizando relacionamentos SQL
+- Visualização orientada para Business Intelligence
+
 ## 🏗️ Arquitetura
 
 ```text
